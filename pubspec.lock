@@ -187,8 +187,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: e0afca6
-      resolved-ref: e0afca648eed3cb9d179a6192e3f88898804d9d5
+      ref: c434dc6
+      resolved-ref: c434dc69b4c8c61f061c5d8e762953b2dc8bc0e6
       url: "https://github.com/lucygeneric/notus.git"
     source: git
     version: "0.1.5"

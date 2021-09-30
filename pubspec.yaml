@@ -10,7 +10,7 @@ dependencies:
   notus:
     git:
       url: https://github.com/lucygeneric/notus.git
-      ref: e0afca6
+      ref: c434dc6
   quill_delta:
     git:
       url: https://github.com/lucygeneric/quill-delta-dart/
