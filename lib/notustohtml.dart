@@ -77,7 +77,7 @@ class _NotusHtmlEncoder extends Converter<Delta, String> {
           _writeInline(lineBuffer, text, style, currentInlineStyle);
     }
 
-    void _handleLine(Map<String, dynamic> attributes) {
+    void _handleLine(Map<String, dynamic>? attributes) {
       final style = NotusStyle.fromJson(attributes);
       final lineBlock = style.get(NotusAttribute.block);
 
@@ -111,7 +111,7 @@ class _NotusHtmlEncoder extends Converter<Delta, String> {
             }
             // Close any open inline styles.
             _handleSpan('', null);
-            _handleLine(attributes!);
+            _handleLine(attributes);
             span.clear();
           } else {
             span.writeCharCode(data.codeUnitAt(i));
