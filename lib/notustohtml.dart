@@ -97,7 +97,8 @@ class _NotusHtmlEncoder extends Converter<Delta, String> {
       final op = iterator.next();
       final lf = (op.data as String).indexOf('\n');
       String data = op.data as String;
-      Map<String, dynamic> attributes = op.attributes as Map<String, dynamic>;
+      Map<String, dynamic>? attributes;
+      if (op.attributes != null) attributes = op.attributes as Map<String, dynamic>;
       if (lf == -1) {
         _handleSpan(data, attributes);
       } else {
@@ -110,7 +111,7 @@ class _NotusHtmlEncoder extends Converter<Delta, String> {
             }
             // Close any open inline styles.
             _handleSpan('', null);
-            _handleLine(attributes);
+            _handleLine(attributes!);
             span.clear();
           } else {
             span.writeCharCode(data.codeUnitAt(i));
