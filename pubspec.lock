@@ -186,10 +186,12 @@ packages:
   notus:
     dependency: "direct main"
     description:
-      name: notus
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0-dev.8.0"
+      path: "."
+      ref: e0afca6
+      resolved-ref: e0afca648eed3cb9d179a6192e3f88898804d9d5
+      url: "https://github.com/lucygeneric/notus.git"
+    source: git
+    version: "0.1.5"
   package_config:
     dependency: transitive
     description:
@@ -228,9 +230,11 @@ packages:
   quill_delta:
     dependency: "direct main"
     description:
-      name: quill_delta
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "80b44723b304a7761405c47b6fe08b73fe8840b1"
+      url: "https://github.com/lucygeneric/quill-delta-dart/"
+    source: git
     version: "3.0.0-nullsafety.2"
   quiver:
     dependency: transitive
@@ -239,6 +243,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+  quiver_hashcode:
+    dependency: transitive
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: c19cf48adb485109fca260b600e24eb1e4c1860d
+      url: "https://github.com/lucygeneric/quiver_hashcode.git"
+    source: git
+    version: "2.0.0"
   shelf:
     dependency: transitive
     description:
